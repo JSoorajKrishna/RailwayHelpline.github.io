@@ -6,5 +6,6 @@ Setup,
 Clone the repo,
 Install packages,
 npm install,
+Create an account in Twilio and Vonage (which are telecommunication companies) and replace the credentials(related to twilio and vonage API) in the app.js file with yours,
 Run the server,
 nodemon app.
