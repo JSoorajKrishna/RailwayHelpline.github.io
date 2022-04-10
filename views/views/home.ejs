@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <%- include("./partials/header.ejs") %>
+    </header>
+    <section>
+        <img src="images/photo-1580442374555-3def8fb41738.jpeg" alt="" width="200px" height="400px"><br>
+
+        <img src="images/doctor-567-1118047.png" alt="" width="50px" height="50px" class="icon">
+        <a href="/medicalEmergency" class="complaint"><button>Medical Emergency</button></a>
+
+        <img src="images/190624.png" alt="" width="50px" height="50px" class="icon">
+        <a href="/complaint" class="complaint"><button>Complaint</button></a>
+    </section>
+    <br><br><br><br>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

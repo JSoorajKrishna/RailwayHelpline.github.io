@@ -1,0 +1,47 @@
+section{
+    text-align: center;
+}
+a{
+    top: 10px;
+    display: inline-block;
+    padding: 2em;
+}
+button{
+    font-weight: bold;
+    padding: 3px;
+    background-color: #7e4141;
+    border: none;
+    font-size: 30px;
+    color: #89c2f0;
+    border: 5px solid #7e4141;
+}
+button:hover{
+    cursor: pointer;
+    border: 5px solid greenyellow;
+}
+html{
+    /* background-color: #89c2f0; */
+    background-color: #7e4141;
+}
+header{
+    text-align: center;
+}
+h1{
+    color: white;
+    display: inline-block;
+    font-size: 3em;
+}
+header h1 img{
+    position: relative;
+    top: 8px;
+}
+footer{
+    text-align: center;
+}
+.complaint{
+    padding: 2em 2em 1em 0;
+}
+.icon{
+    position: relative;
+    top: 8px;
+}

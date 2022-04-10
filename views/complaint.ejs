@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/complaint.css">
+    <title>Complaint</title>
+</head>
+<body>
+    <img src="images/1570860401_1570860398358.jpg" alt="" class="image">
+    <header>
+        <%- include("./partials/header.ejs") %>
+    </header>
+    <h2>List of Police</h2>
+        <div>
+            <% if(police.length > 0){ %>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Mobile Number</td>
+                        <td>Id Number</td>
+                    </tr>
+                    <% for(let i=0;i<police.length;i++){ %>
+                        <tr>
+                            <td><%= police[i].name %></td>
+                            <td>+<%= police[i].mobileNumber %></td>
+                            <td><%= police[i].idNumber %></td>
+                        </tr>
+                        <% } %>
+                </table>
+                <% }else{ %>
+                    <p>Sorry. Currently no police are available</p>
+                    <% } %>
+        </div>
+        <br><br>
+
+    <h2>List of TTR</h2>
+        <div>
+            <% if(ttr.length > 0){ %>
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td>Mobile Number</td>
+                        <td>Id Number</td>
+                    </tr>
+                    <% for(let i=0;i<ttr.length;i++){ %>
+                        <tr>
+                            <td><%= ttr[i].name %></td>
+                            <td>+<%= ttr[i].mobileNumber %></td>
+                            <td><%= ttr[i].idNumber %></td>
+                        </tr>
+                        <% } %>
+                </table>
+                <% }else{ %>
+                    <p>Sorry. Currently no ttr are available</p>
+                    <% } %>
+        </div>
+    <br><br>
+    <%- include("./partials/footer.ejs") %>
+</body>
+</html>

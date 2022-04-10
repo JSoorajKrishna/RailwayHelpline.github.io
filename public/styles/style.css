@@ -1,0 +1,36 @@
+img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+a.index{
+    font-size: 2em;
+    color: #ecf016;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+}
+header{
+    text-align: center;
+}
+section{
+    text-align: center;
+}
+
+a.index:hover{
+    color: #ecf016;
+    border-radius: 6px;
+    font-size: 3em;
+}
